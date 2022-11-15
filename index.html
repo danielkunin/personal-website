@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Daniel Kunin</title>
+		<link rel="stylesheet" href="assets/github-markdown.css">
+		<style>
+			.markdown-body {
+				box-sizing: border-box;
+				min-width: 200px;
+				max-width: 980px;
+				margin: 0 auto;
+				padding: 45px;
+			}
+			@media (max-width: 767px) {
+				.markdown-body {
+					padding: 15px;
+				}
+				.left {
+			    width: 100%;
+			  }
+			  .right {
+			    width: 100%;
+			  }
+				.portrait {
+					margin-bottom: 1em;
+			  }
+				.column-third {
+					float: left;
+			    width: 100%;
+			  }
+			}
+			html {
+			  width: 100vw;
+			}
+			body {
+			  overflow-x: hidden;
+			}
+		</style>
+	</head>
+	<body class="markdown-body">
+		<!-- <h1>Daniel Kunin</h1> -->
+		<div class="banner">
+			<div class="banner-content" id="vis-background"></div>
+			<a class="cppn-control-toggle">
+		      <div class="cppn-control">
+		        <i class="fas fa-sliders-h"></i>
+		      </div>
+		    </a>
+			<div class="cppn-control" style="display: none">
+		      <a class="cppn-control-toggle fa fa-times"></a>
+		      <p>A JavaScript implementation of a <a href="https://en.wikipedia.org/wiki/Compositional_pattern-producing_network">CPPN</a>.</p>
+		      <p>Depth:
+			      <label class="radio-container">
+			          Shallow
+			          <input type="radio" name="depth" value="4" checked/>
+			          <span class="checkmark"></span>
+			      </label>
+			      <label class="radio-container">
+			          Deep
+			          <input type="radio" name="depth" value="5" />
+			          <span class="checkmark"></span>
+			      </label>
+		      </p>
+		      <p>Width:
+			      <label class="radio-container">
+			          Narrow
+			          <input type="radio" name="complexity" value="30" checked/>
+			          <span class="checkmark"></span>
+			      </label>
+			      <label class="radio-container">
+			          Wide
+			          <input type="radio" name="complexity" value="40" />
+			          <span class="checkmark"></span>
+			      </label>
+			  </p>
+		      <p>Nonlinearity:
+			      <select id="activation" class="select-containter">
+			          <option value="sin" selected>Sine</option>
+			          <!-- <option value="cos">Cosine</option> -->
+			          <option value="tanh">Tanh</option>
+			          <!-- <option value="sigmoid">Sigmoid</option>
+			          <option value="linear">Linear</option>
+			          <option value="step">Step</option> -->
+			          <!-- <option value="relu">Relu</option> -->
+			          <option value="leakyRelu">Leaky Relu</option>
+			      </select>
+			   </p>
+		    </div>
+
+	 		<div class="row banner-content">
+				<div class="column-picture left">
+		 			<img class="portrait-circular" src="assets/daniel-kunin.png">
+				</div>
+				<div class="column-picture right">
+					<h1>Daniel Kunin</h1>
+
+					<p>
+						<!-- PhD Student<br/> -->
+					Institute for Computational and Mathematical Engineering<br/>
+					Stanford University</p>
+
+					<p><i>kunin [at] stanford [dot] edu</i></p>
+
+					<p>
+						<a href="https://scholar.google.com/citations?user=qilW2ZMAAAAJ&hl"><b>Google Scholar</b></a>, <a href="https://twitter.com/kunindaniel"><b>Twitter</b></a>, <a href="cv.pdf"><b>CV</b></a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<h2>Biography</h2>
+
+		<p>I am a PhD student at the Institute for Computational and Mathematical Engineering at Stanford, co-advised by <a href="https://ganguli-gang.stanford.edu/surya.html">Surya Ganguli</a> and <a href="http://stanford.edu/~yamins/">Daniel Yamins</a>. I am an <a href="https://www.openphilanthropy.org/grants/open-phil-ai-fellowship-2022-class/">Open Philanthropy AI Fellow</a> and previously a <a href="https://datascience.stanford.edu/about/people/data-science-scholars">Stanford Data Science Scholar</a>. I completed my B.S. in Applied Math from Brown University in 2017.</p>
+
+				
+		<h2>Research</h2>
+
+		<p>My research uses tools from physics to build theoretical models for the learning dynamics of neural networks trained with stochastic gradient descent. Thus far, my research has focused on the effect of regularization on the geometry of the loss landscape, identification of symmetry and conservation laws in the learning dynamics, and how ideas from thermodynamics can be used to understand the impact of stochasticity in SGD. My current research focuses on linking the dynamics of SGD to implicit biases impacting the generalization and robustness properties of the trained network.</p>
+
+		<h3>Publications</h3>
+
+		<p><b>Daniel Kunin</b>*, Atsushi Yamamura*, Chao Ma, Surya Ganguli. The Asymmetric Maximum Margin Bias of Quasi-Homogeneous Neural Networks. [<a href="https://arxiv.org/abs/2210.03820">paper</a>] [<a href="">code</a>]</p>
+
+		<p>Chao Ma, <b>Daniel Kunin</b>, Lei Wu, Lexing Ying. Beyond the Quadratic Approximation: the Multiscale Structure of Neural Network Loss Landscapes. JMLR 2022. [<a href="https://arxiv.org/abs/2204.11326">paper</a>]</p>
+
+		<p><b>Daniel Kunin</b>*, Javier Sagastuy-Brena*, Lauren Gillespie, Eshed Margalit, Hidenori Tanaka, Surya Ganguli, Daniel L.K. Yamins. Rethinking the limiting dynamics of SGD: modified loss, phase space oscillations and anomalous diffusion. [<a href="https://arxiv.org/abs/2107.09133">paper</a>] [<a href="https://github.com/danielkunin/rethinking-SGD">code</a>]</p>
+
+		<p>Hidenori Tanaka, <b>Daniel Kunin</b>. Noether's Learning Dynamics: The Role of Kinetic Symmetry Breaking in Deep Learning. NeurIPS 2021. [<a href="https://arxiv.org/abs/2105.02716">paper</a>]</p>
+
+		<p><b>Daniel Kunin</b>*, Javier Sagastuy-Brena, Surya Ganguli, Daniel L.K. Yamins, Hidenori Tanaka*. Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics. ICLR 2021. [<a href="https://arxiv.org/abs/2012.04728">paper</a>] [<a href="https://github.com/danielkunin/neural-mechanics">code</a>] [<a href="https://www.youtube.com/watch?v=xiumcpMqkXM">talk</a>] [<a href="https://ai.stanford.edu/blog/neural-mechanics">blog</a>]</p>
+
+		<p>Hidenori Tanaka*, <b>Daniel Kunin</b>*, Daniel L.K. Yamins, Surya Ganguli. Pruning neural networks without any data by iteratively conserving synaptic flow. NeurIPS 2020. [<a href="https://arxiv.org/abs/2006.05467">paper</a>] [<a href="https://github.com/ganguli-lab/Synaptic-Flow">code</a>]</p>
+
+		<p><b>Daniel Kunin</b>*, Aran Nayebi*, Javier Sagastuy-Brena*, Surya Ganguli, Jonathan M. Bloom, Daniel L.K. Yamins. Two Routes to Scalable Credit Assignment without Weight Symmetry. ICML 2020. [<a href="https://arxiv.org/abs/2003.01513">paper</a>] [<a href="https://github.com/neuroailab/Neural-Alignment">code</a>]</p>
+
+		<p><b>Daniel Kunin</b>*, Jonathan M. Bloom*, Aleksandrina Goeva, Cotton Seed. Loss Landscapes of Regularized Linear Autoencoders. ICML 2019. [<a href="https://arxiv.org/abs/1901.08168">paper</a>] [<a href="https://github.com/danielkunin/Regularized-Linear-Autoencoders">code</a>] [<a href="https://www.youtube.com/watch?v=1mvwCmqd6zQ&list=PLlMMtlgw6qNjROoMNTBQjAcdx53kV50cS&t=3480s">talk</a>] [<a href="https://github.com/danielkunin/Regularized-Linear-Autoencoders">blog</a>]</p>
+
+
+		<h2>Teaching</h2>
+
+		<p><b>CS230: Deep Learning.</b> From 2018 through 2019 I worked as a Course Assistant for <a href="http://cs230.stanford.edu/">CS230</a> where I redesigned the weekly discussion sections and created educational <a href="https://www.deeplearning.ai/ai-notes/index.html">tutorials</a> of key deep learning concepts.</p>
+
+		<p><b>Seeing Theory: A Visual Introduction to Proability and Statistics.</b> From 2015 through 2018 I built <a href="seeingtheory.io">Seeing Theory</a>, an online textbook of interactive visualizations of core concepts in probability and statistics. Since its launch in 2016, the website has been viewed over three million times by over one million users from every single country in the world.</p>
+
+			
+	</body>
+	<!-- Custom CSS -->
+	<link href="assets/cppn.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
+	<!-- Load jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Load D3 -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<!-- Load Tensorflow -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"></script>
+	<!-- Load cppn.js -->
+	<script src="assets/cppn.js"></script>
+	<!-- Local Functionality -->
+	<script type="text/javascript">
+
+	    $(".cppn-control-toggle").click(function() {
+	      $(".cppn-control").toggle();
+	    })
+
+	    var colors = {
+	      'red' : [[100,100,100], [0,0,0], [50,50,50]],//[[255,139,34], [255,87,87], [255,31,103]],
+	      'blue' : [[0,233,222], [41,156,222], [98,0,222]],
+	      'green' : [[120,184,66], [45,155,106], [0,125,117]],
+	      'purple' : [[248,73,73], [240,159,180], [116,0,116]],
+	      'yellow' : [[246,174,29], [230,170,25], [195,135,35]]
+	    }
+
+	    var c = 'red',
+	        layers =4,
+	        unit = 30
+	        activation = "sin";
+
+	    var cppn = cppnSetup(colors[c]);
+
+	    $("input[name='depth']").on("change", function () {
+	      layers = parseInt($(this).val());
+	      cppn.update(architecture(layers, unit), activation, colors[c])
+	    });
+
+	    $("input[name='complexity']").on("change", function () {
+	      unit = parseInt($(this).val());
+	      cppn.update(architecture(layers, unit), activation, colors[c])
+	    });
+
+	    $("#activation").on("change", function() {
+	      activation = $(this).val();
+	      cppn.update(architecture(layers, unit), activation, colors[c])
+	    });
+
+	    $("#color").on("change", function() {
+	      c = $(this).val();
+	      cppn.update(architecture(layers, unit), activation, colors[c])
+	    });
+
+
+	    function architecture(layers, units) {
+	      var arr = [5];
+	      for (var i = 0; i < layers; i++) {
+	        arr.push(units);
+	      }
+	      arr.push(3);
+	      return arr;
+	    }
+	</script>
+</html>
