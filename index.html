@@ -6,42 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Daniel Kunin</title>
 		<link rel="stylesheet" href="assets/github-markdown.css">
-		<style>
-			.markdown-body {
-				box-sizing: border-box;
-				min-width: 200px;
-				max-width: 980px;
-				margin: 0 auto;
-				padding: 45px;
-			}
-			@media (max-width: 767px) {
-				.markdown-body {
-					padding: 15px;
-				}
-				.left {
-			    width: 100%;
-			  }
-			  .right {
-			    width: 100%;
-			  }
-				.portrait {
-					margin-bottom: 1em;
-			  }
-				.column-third {
-					float: left;
-			    width: 100%;
-			  }
-			}
-			html {
-			  width: 100vw;
-			}
-			body {
-			  overflow-x: hidden;
-			}
-		</style>
 	</head>
 	<body class="markdown-body">
-		<!-- <h1>Daniel Kunin</h1> -->
 		<div class="banner">
 			<div class="banner-content" id="vis-background"></div>
 			<a class="cppn-control-toggle">
@@ -168,14 +134,15 @@
 	    })
 
 	    var colors = {
-	      'red' : [[100,100,100], [0,0,0], [50,50,50]],//[[255,139,34], [255,87,87], [255,31,103]],
+	      'black' : [[100,100,100], [0,0,0], [50,50,50]],
+	      'red' : [[255,139,34], [255,87,87], [255,31,103]],
 	      'blue' : [[0,233,222], [41,156,222], [98,0,222]],
 	      'green' : [[120,184,66], [45,155,106], [0,125,117]],
 	      'purple' : [[248,73,73], [240,159,180], [116,0,116]],
 	      'yellow' : [[246,174,29], [230,170,25], [195,135,35]]
 	    }
 
-	    var c = 'red',
+	    var c = 'black',
 	        layers =4,
 	        unit = 30
 	        activation = "sin";
