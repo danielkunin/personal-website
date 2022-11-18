@@ -200,8 +200,8 @@ function cppnSetup(color) {
         .attr("class", "cppn");
 
     // define architecture
-    var layers = [5,30,30,30,30,3],
-        activation = 'sin'
+    var layers = [5,40,40,40,40,40,3],
+        activation = 'tanh'
         zScale = [180, 130];
 
     // make cppn

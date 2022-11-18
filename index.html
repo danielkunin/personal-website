@@ -21,32 +21,32 @@
 		      <p>Depth:
 			      <label class="radio-container">
 			          Shallow
-			          <input type="radio" name="depth" value="4" checked/>
+			          <input type="radio" name="depth" value="4"/>
 			          <span class="checkmark"></span>
 			      </label>
 			      <label class="radio-container">
 			          Deep
-			          <input type="radio" name="depth" value="5" />
+			          <input type="radio" name="depth" value="5" checked/>
 			          <span class="checkmark"></span>
 			      </label>
 		      </p>
 		      <p>Width:
 			      <label class="radio-container">
 			          Narrow
-			          <input type="radio" name="complexity" value="30" checked/>
+			          <input type="radio" name="complexity" value="30"/>
 			          <span class="checkmark"></span>
 			      </label>
 			      <label class="radio-container">
 			          Wide
-			          <input type="radio" name="complexity" value="40" />
+			          <input type="radio" name="complexity" value="40" checked/>
 			          <span class="checkmark"></span>
 			      </label>
 			  </p>
 		      <p>Nonlinearity:
 			      <select id="activation" class="select-containter">
-			          <option value="sin" selected>Sine</option>
+			          <option value="sin">Sine</option>
 			          <!-- <option value="cos">Cosine</option> -->
-			          <option value="tanh">Tanh</option>
+			          <option value="tanh" selected>Tanh</option>
 			          <!-- <option value="sigmoid">Sigmoid</option>
 			          <option value="linear">Linear</option>
 			          <option value="step">Step</option> -->
@@ -143,9 +143,9 @@
 	    }
 
 	    var c = 'black',
-	        layers =4,
-	        unit = 30
-	        activation = "sin";
+	        layers = 5,
+	        unit = 40
+	        activation = "tanh";
 
 	    var cppn = cppnSetup(colors[c]);
 
